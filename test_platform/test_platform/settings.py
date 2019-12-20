@@ -26,7 +26,7 @@ SECRET_KEY = 'x0uccr#$v8pn7@*wfr37vw2_29pd(%uxg^9zv0_hb*1z-b+on4'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# APPEND_SLASH=False
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'person',#需要添加应用
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'test_platform.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'dev.sqlite3'),
     }
 }
 
